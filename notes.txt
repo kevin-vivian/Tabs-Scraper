@@ -1,0 +1,20 @@
+I want this web scraper to go through the entire abysslord website and get all 
+the files in every directory.
+
+Inside parent directory:
+   <a href="(album_title)/(album_title).html"
+
+
+   Inside album directory (i.e. where all my files are):
+      sample entry:
+            <a href="(song_title).(format)" target="_blank"> (format) </a>
+
+             # where (format) in {.txt, .pdf, .ptb, gpx}
+
+      The URL hosting the files follow the convention:
+         regex: (number)-(song_title).(format)
+
+for every <a href..> entry on the webpage:
+  if the <a href...> has our regex:
+     create a directory named after the song
+     download every file format
